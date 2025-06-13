@@ -29,5 +29,5 @@ public class Palindrome {
 		Palindrome.palin(141);
 
 	}
-	
+//	hghghgh
 }
