@@ -3,41 +3,29 @@ package ImpPrograms;
 import java.util.Arrays;
 
 public class Anagram {
-	public static void ana(String word1, String word2)
+	public static void main(String args[])
 	{
-		
-		
-		String word11=word1.toLowerCase();
-		String word22=word2.toLowerCase();
-		
-		if(word11.length() != word22.length())
+		String word1 = "santosh";
+		String word2 = "hsotnas";
+		if(word1.length()!=word2.length())
 		{
-			System.err.println("Not a anagram");
+			System.out.println("Its not an anagram");
 		}
-		else
+		else 
 		{
-			char[] word111=word11.toCharArray();
-			char[] word222=word22.toCharArray();
-			
-			Arrays.sort(word111);
-			Arrays.sort(word222);
-			
-			if(Arrays.equals(word111, word222))
+			char[] w1 = word1.toCharArray();
+			char[] w2 = word2.toCharArray();
+			Arrays.sort(w1);
+			Arrays.sort(w2);
+			if(Arrays.equals(w1, w2))
 			{
 				System.out.println("Anagram");
 			}
 			else
 			{
-				System.out.println("not a anagram");
+				System.out.println("Not an anagram");
 			}
+			
 		}
 	}
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		ana("listen", "silent");
-
-	}
-
 }

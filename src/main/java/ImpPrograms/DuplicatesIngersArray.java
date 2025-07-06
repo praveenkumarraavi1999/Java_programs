@@ -14,7 +14,7 @@ public class DuplicatesIngersArray {
 		{
 			if(hs.add(numbers[i]))
 			{
-				System.out.println("uniques numbers "+numbers[i]);
+				System.out.print(numbers[i]+" ");
 			}
 //			else
 //			{
